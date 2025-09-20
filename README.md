@@ -1,10 +1,11 @@
 # RISC-V SoC Tapeout Program — Week 0
 
-![Repo Layout](assets/repo-layout.png)
+<img width="1248" height="832" alt="Gemini_Generated_Image_sz2vnsz2vnsz2vns" src="https://github.com/user-attachments/assets/43162551-e632-4e5e-8680-cc506799f795" />
 
 ## Welcome to My VSD RISC-V SoC Tapeout Journey
 
-This is Week 0 — environment setup, tool installation, and an overview of the SoC tapeout flow.
+This is Week 0 — environment setup, tool installation
+, and an overview of the SoC tapeout flow.
 
 ## Week 0 Objectives
 - Understand tapeout flow & program structure
