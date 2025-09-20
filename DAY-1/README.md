@@ -1,22 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Day 1 - RISC-V SoC Tapeout</title>
-<style>
-    body { font-family: Arial, sans-serif; background: #f9f9f9; margin:0; padding:0;}
-    header { background:#1e2a38; color:white; text-align:center; padding:2rem 1rem;}
-    h1, h2, h3 { color:#2c3e50; }
-    .container { max-width:1200px; margin:2rem auto; padding:1rem; background:white; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1);}
-    pre { background:#eee; padding:1rem; overflow-x:auto; border-radius:5px;}
-    img { max-width:100%; margin:1rem 0; border-radius:10px; }
-    table { border-collapse: collapse; width:100%; margin:1rem 0;}
-    th, td { border:1px solid #ccc; padding:0.5rem; text-align:center;}
-    code { background:#eee; padding:2px 5px; border-radius:3px;}
-</style>
-</head>
-<body>
+<h1 align="center">🌟 RISC-V SoC Tapeout – Week 0</h1> 
+<br><br><br>
+## 🚀 Getting Started with Digital VLSI SoC Design & Planning  
+<p align="center">
+
+<img width="1656" height="231" alt="Screenshot 2025-09-20 123854" src="https://github.com/user-attachments/assets/c8c14098-91a7-4859-b262-37d8eaaa46d2" />
+</p>
+ 🟢 Step 1: Application & Chip Modeling  
+
+    ```
+    O0 == O1   → chip specification is valid 👍
+   
+    ```
+## 🏗️ Step 2: RTL Development 
+<p align="center">
+
+<img width="1135" height="155" alt="Screenshot 2025-09-20 143448" src="https://github.com/user-attachments/assets/d06e460b-8e67-4387-8ff7-6cf88e57d9b2" />
+</p>
+## ⚙️ Step 3: ASIC Flow – Processor & Peripherals  
+
+<p align="center">
+
+<img width="1000" height="496" alt="Screenshot 2025-09-20 143607" src="https://github.com/user-attachments/assets/2685ef65-b896-43f2-9c95-cdc80e583341" />
+</p>
+## 🛠️ Step 4: OpenLane Flow (RTL → GDSII) 
+<p align="center">
+<img width="1011" height="559" alt="Screenshot 2025-09-20 143811" src="https://github.com/user-attachments/assets/3ccc9d02-cded-449c-a31b-e14c9b674b61" /></p>
+
+- 🏗️ **OpenLane** is the open-source ASIC flow used for **tapeout preparation**.  
+- 🔄 Flow includes:  
+
+    ```text
+    RTL → Netlist → Floorplan → Placement → Routing → GDSII
+    ```
+
+- 🖼️ **GDSII** = Final chip mask layout used for fabrication.  
+
+
 
 <header>
 <h1>🌟 RISC-V SoC Tapeout – Day 1</h1>
@@ -26,13 +45,14 @@
 <div class="container">
 <h2>1️⃣ Tools Installation</h2>
 <h3>Yosys</h3>
-<img src="" alt="Yosys Screenshot">
+<img width="976" height="327" alt="yosys inlcude" src="https://github.com/user-attachments/assets/ea223d58-c8ee-4c33-ab59-15e82579d3b4" />
 
-<h3>Icarus Verilog</h3>
-<img src="assets/iverilog.png" alt="Icarus Verilog Screenshot">
+<h3>Yosys version <img width="883" height="55" alt="Screenshot 2025-09-20 162459" src="https://github.com/user-attachments/assets/a00b97d7-c820-4b8c-98b1-6ead4ae5c093" /> </h3>
 
-<h3>GTKWave</h3>
-<img src="assets/gtkwave.png" alt="GTKWave Screenshot">
+
+
+
+
 
 <hr>
 <h2>2️⃣ Verilog Design - Full Adder</h2>
@@ -68,24 +88,19 @@ end
 endmodule</code></pre>
 
 <h2>3️⃣ Waveform Output</h2>
-<img src="assets/waveform.png" alt="Full Adder Waveform">
+
+<img width="1872" height="682" alt="gtkwaveoutput" src="https://github.com/user-attachments/assets/061e6ebe-d58f-48b3-9782-18c9ea476cdd" />
 
 <hr>
 <h2>4️⃣ Truth Table</h2>
-<table>
-<tr><th>A</th><th>B</th><th>Cin</th><th>Sum</th><th>Cout</th></tr>
-<tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-<tr><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
-<tr><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
-<tr><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
-<tr><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
-<tr><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
-<tr><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
-<tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-</table>
+<img width="1919" height="275" alt="Screenshot 2025-09-20 170759" src="https://github.com/user-attachments/assets/a17c763a-136a-46d4-abf1-30c157ad2a13" />
+
+
+
+
 
 <footer style="text-align:center; margin:2rem 0;">
-<p>📌 Day 1 - RISC-V SoC Tapeout | Created by Your Name</p>
+<p>📌 Day 1 - RISC-V SoC Tapeout | Pandiyarajan.S</p>
 </footer>
 </div>
 </body>
