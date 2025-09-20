@@ -30,4 +30,4 @@ This is Week 0 — environment setup, tool installation, and an overview of the 
 - `DAY1/` — RTL exercises and notes
 
 ## Links
-Main Repo Link : https://github.com/your-username/RISC-V-SoC-Tapeout_Week-0
+Main Repo Link : https://github.com/Pandiya2007/RISC-V-TAPEOUT-PROGRAM-WEEK-0
